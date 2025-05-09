@@ -22,7 +22,7 @@ echo "\n开始渲染..."
 # 循环渲染每个场景
 for SCENE_NAME in $SCENES; do
     echo "\n正在渲染场景: $SCENE_NAME"
-    manim -pql example_scene.py $SCENE_NAME
+    manim -ql example_scene.py $SCENE_NAME
     if [ $? -eq 0 ]; then
         echo "场景 $SCENE_NAME 渲染成功。"
     else
